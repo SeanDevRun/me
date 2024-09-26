@@ -1,5 +1,5 @@
 <template>
- <v-app>
+  <v-app>
     <SplashView v-if="loading" />
     <router-view v-else />
   </v-app>  

@@ -1,7 +1,7 @@
 <template>
-
-    <HeaderPane></HeaderPane>
-
+    <v-main class="d-flex bg-primary text-center align-center justify-center" style="min-height: 300px;">
+        <HeaderPane></HeaderPane>
+    </v-main>
 </template>
 
 <script>
@@ -10,8 +10,7 @@
     export default {
         name: 'HomeView',
         components: {
-                HeaderPane
-            
+            HeaderPane            
         },
         data () {
             return {
