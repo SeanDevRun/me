@@ -1,0 +1,57 @@
+/**
+ * @name index.js
+ *
+ * @fileoverview Handles the navigation routing of the app.
+ * Including containers based on the context of the request plus authentication
+ *
+ * @author Sean Harding
+ * @version 1.0.0.0
+ * @copyright (c) 2024 Sean Harding
+ *
+ */
+
+import { createRouter, createWebHistory } from "vue-router"
+
+// Views
+import Home from "@/views/HomeView.vue"
+//import Software from "@/views/SoftwareView.vue"
+import Test from '@/components/profile2/TestView.vue';
+
+const baseTitle = "SeanHarding.me";
+
+const routes = [
+    {
+        path: "/",
+        name: "Home",
+        component: Home,
+        meta:
+        {
+            title: `${baseTitle} Home`,
+        }
+    },
+    {
+        path: "/dev",
+        name: "Software",
+        component: Test,
+        meta:
+        {
+            title: `${baseTitle} Home`,
+        }
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        name: "Error",
+        component: Error,
+        meta:
+        {
+            title: `${baseTitle} Error`,
+        }
+    }
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes
+});
+
+export default router

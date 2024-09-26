@@ -1,9 +1,14 @@
 // src/plugins/vuetify.js
 
 import '@mdi/font/css/materialdesignicons.css'
+
+import '@fortawesome/fontawesome-free/css/all.css' // Ensure your project is capable of handling css files
+
 import "vuetify/styles"
 
 import { createVuetify } from "vuetify"
+
+import { md1 } from 'vuetify/blueprints'
 
 import * as core from "vuetify/components"
 import * as directives from "vuetify/directives"
@@ -26,9 +31,17 @@ const Dark = {
 }
 
 const vuetify = createVuetify({
+    blueprint: md1,
+    aliases: {
+        IconBtn: core.VBtn,
+        ProgressCircle: core.VProgressCircular,        
+        SheetPanel: core.VSheet,
+        SkillChip: core.VChip,        
+    },
     ssr: true,
     icons: {
-        defaultSet: "mdi" // This is already the default value - only for display purposes
+        defaultSet: "mdi", // This is already the default value - only for display purposes
+        iconfont: 'fa' || 'mdi', // Specify Font Awesome and MDI
     },
     components: {
         ...core,
@@ -42,6 +55,30 @@ const vuetify = createVuetify({
             Dark
         }
     },
+    defaults: {
+        global: {
+            ripple: false,
+        },
+        IconBtn: {
+            variant: "text",
+            color: "accent", 
+            class: "text-h3"           
+        },
+        ProgressCircle: {
+            color: "accent",
+            indeterminate: true,
+            size: "200"
+        },
+        SheetPanel: {            
+            color: "accent",
+            elevation: 4,                                            
+            rounded: "lg",                       
+        },
+        SkillChip: {
+            size: "small",
+            variant: "outlined",
+        } 
+    }
 });
 
 export default vuetify;
