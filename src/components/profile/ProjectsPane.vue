@@ -18,7 +18,7 @@
 
 <script>
 
-  import ImageGallery from '@/components/common/ImageGallery.vue';
+  import ImageGallery from '@/components/Common/ImageGallery.vue';
 
   export default {
       name: 'ProjectsPane',

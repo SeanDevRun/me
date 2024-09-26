@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import HeaderPane from '@/components/common/HeaderPane.vue';
+    import HeaderPane from '@/components/Common/HeaderPane.vue';
     
     export default {
         name: 'HomeView',
