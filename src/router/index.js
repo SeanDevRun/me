@@ -13,9 +13,8 @@
 import { createRouter, createWebHistory } from "vue-router"
 
 // Views
+import Error from "@/views/ErrorView.vue"
 import Home from "@/views/HomeView.vue"
-//import Software from "@/views/SoftwareView.vue"
-import Test from '@/components/profile2/TestView.vue';
 
 const baseTitle = "SeanHarding.me";
 
@@ -24,15 +23,6 @@ const routes = [
         path: "/",
         name: "Home",
         component: Home,
-        meta:
-        {
-            title: `${baseTitle} Home`,
-        }
-    },
-    {
-        path: "/dev",
-        name: "Software",
-        component: Test,
         meta:
         {
             title: `${baseTitle} Home`,

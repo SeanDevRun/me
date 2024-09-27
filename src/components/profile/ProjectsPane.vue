@@ -1,37 +1,24 @@
 <template>
-
-    <v-container>
-
-        <v-row class="text-center">
-            <v-col class="text-accent">
-                <h3>Projects</h3>
-            </v-col>
-        </v-row>
-
-        <v-row>
-          <image-gallery></image-gallery>
-        </v-row>
-
-    </v-container>
-
+  <section-pane title="Projects">
+    <p>BLAH</p>
+  </section-pane>
 </template>
-
+  
 <script>
-
-  import ImageGallery from '@/components/Common/ImageGallery.vue';
-
+  import SectionPane from '@/components/common/SectionPane.vue'
+  
   export default {
-      name: 'ProjectsPane',
-      components: {
-        ImageGallery
-      },
-      data () {
-          return {
-          }
-      },
-  };
+    name: 'ProjectsPane',
+    components: {
+      SectionPane
+    },
+    data: () => ({
+    }),
+    methods: {
+    }
+  }
 </script>
-
-<style scoped>
-
+  
+<style>
 </style>
+  

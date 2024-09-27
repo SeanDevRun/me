@@ -17,34 +17,25 @@
               <v-divider class="my-2"></v-divider>
             </v-col>
           </v-row>
-          <v-row align="center" justify="center">
-            <v-spacer></v-spacer>
-            <v-col>
-              <IconBtn icon="mdi-linkedin"></IconBtn>
-            </v-col>
-            <v-col>
-              <IconBtn icon="mdi-github"></IconBtn>           
-            </v-col>
-            <v-col>
-              <IconBtn icon="mdi-email-outline"></IconBtn>  
-            </v-col>
-            <v-spacer></v-spacer>
-          </v-row>
+          <socials-pane></socials-pane>
         </v-container>
       </section>
 
 </template>
   
 <script>
-    export default {
-      name: 'HeaderPane',
-      components: {
-      },
-      data: () => ({
-      }),
-      methods: {
-      }
+  import SocialsPane from './SocialsPane.vue'
+  
+  export default {
+    name: 'HeaderPane',
+    components: {
+          SocialsPane
+    },
+    data: () => ({
+    }),
+    methods: {
     }
+  }
 </script>
   
 <style>
