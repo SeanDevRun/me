@@ -1,10 +1,16 @@
 <template>
-  <section class="section-component">         
-    <v-toolbar color="accent" density="compact" :elevation="8"/>
-    <h2>{{ title }}</h2>
-    <div class="content">
-      <slot></slot>
-    </div>
+  <section class="section-component">            
+
+    <SheetPanel class="pa-10" min-height="50vh" :elevation="14">
+
+      <h2 class="text-accent text-h3">{{ title }}</h2>
+      
+      <div class="content">
+        <slot></slot>
+      </div>
+
+    </SheetPanel>
+    
   </section>
 </template>
 
@@ -26,5 +32,7 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;  
 }
 </style>

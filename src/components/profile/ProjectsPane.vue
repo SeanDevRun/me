@@ -1,16 +1,18 @@
 <template>
   <section-pane title="Projects">
-    <p>BLAH</p>
+    <image-gallery></image-gallery>
   </section-pane>
 </template>
   
 <script>
   import SectionPane from '@/components/common/SectionPane.vue'
+  import ImageGallery from '@/components/common/ImageGallery.vue'
   
   export default {
     name: 'ProjectsPane',
     components: {
-      SectionPane
+      SectionPane,
+      ImageGallery
     },
     data: () => ({
     }),

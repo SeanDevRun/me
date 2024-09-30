@@ -26,13 +26,15 @@ const Dark = {
         success: "#4CAF50",
         warning: "#FFC107",
         anchor: "#84bd00",
-        font: "#000000"
+        font: "#000000",
+        background: "#273040"
     }
 }
 
 const vuetify = createVuetify({
     blueprint: md1,
     aliases: {
+        Divider: core.VDivider,
         IconBtn: core.VBtn,
         ProgressCircle: core.VProgressCircular,        
         SheetPanel: core.VSheet,
@@ -59,6 +61,11 @@ const vuetify = createVuetify({
         global: {
             ripple: false,
         },
+        Divider: {
+            thickness: "2",
+            color: "accent",
+            opacity: "60%"
+        },
         IconBtn: {
             variant: "text",
             color: "accent", 
@@ -70,8 +77,8 @@ const vuetify = createVuetify({
             size: "200"
         },
         SheetPanel: {            
-            color: "accent",
-            elevation: 4,                                            
+            color: "background",
+            elevation: 10,                                            
             rounded: "lg",                       
         },
         SkillChip: {

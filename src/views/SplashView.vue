@@ -1,9 +1,9 @@
 
 <template>
 
-    <v-main class="d-flex bg-primary text-center align-center justify-center" style="min-height: 300px;">
+    <v-main class="d-flex text-center align-center justify-center" style="min-height: 300px;">
 
-        <v-container class="bg-primary" fill-height fluid>
+        <v-container class="bg-background" fill-height fluid>
 
             <v-row justify="center">
 

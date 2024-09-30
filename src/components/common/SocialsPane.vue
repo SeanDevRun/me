@@ -1,9 +1,9 @@
 <template>
   <section>
 
-    <v-container fill-height>
+    <v-container>
 
-      <v-row align="center" justify="center">
+      <v-row>
 
         <v-spacer></v-spacer>
 

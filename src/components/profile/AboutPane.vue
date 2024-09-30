@@ -1,5 +1,5 @@
 <template>
-  <section-pane title="About">
+  <section-pane title="ABOUT">
     <p>BLAH</p>
   </section-pane>
 </template>
