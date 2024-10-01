@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <SplashView v-if="loading" />
+    <splash-view v-if="loading" />
     <router-view v-else />
   </v-app>  
 </template>
 
 <script>
-import SplashView from './views/SplashView.vue';
+import SplashView from '@/views/SplashView.vue';
 
 export default {
   name: 'App',

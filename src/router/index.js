@@ -44,4 +44,13 @@ const router = createRouter({
     routes
 });
 
+router.beforeEach((to, from, next) => {
+    console.log(`Navigating to ${to.path} from ${from.path}`);
+    next();
+});
+
+router.afterEach((to, from) => {
+    console.log(`Successfully navigated to ${to.path}`);
+});
+
 export default router
