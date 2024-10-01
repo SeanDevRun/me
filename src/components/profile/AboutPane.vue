@@ -43,16 +43,17 @@
             <v-col cols="12">
               <v-row>
                 <v-col>
-                  <h2 class="text-accent">Skills</h2>
+                  <h2 class="text-accent">Programming Languages</h2>
                 </v-col>
               </v-row>
               <v-row>
-                <v-col cols="4" class="text-accent">
-                  <v-chip rounded variant="tonal" color="accent">Programming Languages:</v-chip>
-                </v-col>
-                <v-col>
-                  <v-chip rounded variant="text">C++, C#, Python, JavaScript, SQL, HTML/CSS</v-chip>  
+                <v-col cols="2">
+                  <!-- <v-chip rounded variant="text">C++, C#, Python, JavaScript, SQL, HTML/CSS</v-chip>   -->
                   <c-plus-plus></c-plus-plus>
+                </v-col>
+                <v-col cols="2">
+                  <!-- <v-chip rounded variant="text">C++, C#, Python, JavaScript, SQL, HTML/CSS</v-chip>   -->
+                  <c-sharp></c-sharp>
                 </v-col>
               </v-row>
             </v-col>          
@@ -65,13 +66,16 @@
   
 <script> 
   import SectionPane from '@common/SectionPane.vue'  
+
   import CPlusPlus from '@/components/icons/CPlusPlus.vue'
+  import CSharp from '@components/icons/CSharp.vue'
 
   export default {
     name: 'AboutPane',
     components: {
       SectionPane,
-        CPlusPlus
+        CPlusPlus,
+        CSharp
     },
     data: () => ({
     }),
