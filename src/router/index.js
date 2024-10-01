@@ -50,7 +50,7 @@ router.beforeEach((to, from, next) => {
 });
 
 router.afterEach((to, from) => {
-    console.log(`Successfully navigated to ${to.path}`);
+    console.log(`Successfully navigated to ${to.path} from ${from.path}`);
 });
 
 export default router
