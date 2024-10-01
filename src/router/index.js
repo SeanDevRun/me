@@ -13,8 +13,8 @@
 import { createRouter, createWebHistory } from "vue-router"
 
 // Views
-import Error from "@/views/ErrorView.vue"
-import Home from "@/views/HomeView.vue"
+import Error from "@views/ErrorView.vue"
+import Home from "@views/HomeView.vue"
 
 const baseTitle = "SeanHarding.me";
 

@@ -2,12 +2,13 @@
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
-    "baseUrl": "./",
+    "baseUrl": "./src", // Should be "./src" if your source files are in the "src" folder
     "moduleResolution": "node",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@assets/*" : ["assets/*"], // Alias for the assets folder
+      "@common/*" : ["components/common/*"], // Alias for the components/common folder
+      "@components/*" : ["components/*"], // Alias for the components folder
+      "@views/*" : ["views/*"], // Alias for the views folder
     },
     "lib": [
       "esnext",

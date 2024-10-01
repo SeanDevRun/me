@@ -5,8 +5,8 @@
 </template>
   
 <script>
-  import SectionPane from '@/components/common/SectionPane.vue'
-  import ImageGallery from '@/components/common/ImageGallery.vue'
+  import SectionPane from '@common/SectionPane.vue'
+  import ImageGallery from '@common/ImageGallery.vue'
   
   export default {
     name: 'ProjectsPane',

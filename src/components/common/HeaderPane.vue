@@ -9,7 +9,7 @@
       </v-row>
       <v-row>
         <v-col>
-          <p class="text-h4 font-weight-black text-white">Senior Software Engineer</p> 
+          <p class="text-h4 font-weight-black">Senior Software Engineer</p> 
         </v-col>
       </v-row>
       <v-row>

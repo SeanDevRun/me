@@ -9,7 +9,7 @@
       </v-row>
       <v-row align="center" justify="center">
         <v-col>
-          <p class="text-h4 font-weight-black text-white">Something went wrong Sorry!</p> 
+          <p class="text-h4 font-weight-black">Something went wrong Sorry!</p> 
         </v-col>
       </v-row>          
       <v-row align="center" justify="center">

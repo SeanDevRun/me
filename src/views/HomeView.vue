@@ -19,7 +19,7 @@
 </template>
 
 <script> 
-    import HeaderPane from '@/components/common/HeaderPane.vue';
+    import HeaderPane from '@common/HeaderPane.vue';
     import AboutPane from '@/components/profile/AboutPane.vue';
     import ProjectsPane from '@/components/profile/ProjectsPane.vue';
 
