@@ -1,6 +1,14 @@
 <template>
-  <section-pane title="Projects">
-    <image-gallery></image-gallery>
+  <section-pane title="Projects" id="projects">
+    <image-gallery v-if="gallery" />
+    <v-container v-else>
+      <v-row>
+        <v-col>
+          <h3>COMING SOON!</h3>
+          <p>I'm working on something so come back another time...</p>
+        </v-col>
+      </v-row>
+    </v-container>
   </section-pane>
 </template>
   
@@ -15,6 +23,7 @@
       ImageGallery
     },
     data: () => ({
+      gallery: false
     }),
     methods: {
     }

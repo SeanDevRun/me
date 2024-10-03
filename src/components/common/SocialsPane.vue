@@ -38,7 +38,7 @@
             icon : "mdi-github", 
             link : "https://github.com/SeanDevRun?tab=repositories" },
           { name: "YouTube", 
-            icon : "mdi-guitar-pick-outline", 
+            icon : "mdi-youtube", 
             link : "https://www.youtube.com/@seanhardingmusic6832" },
         ]
       }),
