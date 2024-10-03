@@ -1,4 +1,13 @@
-// src/plugins/vuetify-theme.js
+/**
+ * @name vuetify-theme.js
+ *
+ * @fileoverview Handles the definition of themes for Vuetify.
+ *
+ * @author Sean Harding
+ * @version 1.0.0.0
+ * @copyright (c) 2024 Sean Harding
+ *
+ */
 
 export const darkTheme = {
     dark: true,
@@ -13,12 +22,14 @@ export const darkTheme = {
         warning: "#FFC107",
         anchor: "#84bd00",
         font: "#FFFFFF",
-        background: "#273040"
+        background: "#273040",
+        'background-lighten-1': "#455571",
+
     }
 }
 
 export const lightTheme = {
-    dark: true,
+    dark: false,
     colors: {
         primary: "#242726",
         secondary: "#424242",
@@ -30,6 +41,7 @@ export const lightTheme = {
         warning: "#FFC107",
         anchor: "#84bd00",
         font: "#273040",
-        background: "#FFFFFF"
+        background: "#FFFFFF",
+        'background-lighten-1': "#c8c8c8"
     }
 }

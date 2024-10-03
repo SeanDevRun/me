@@ -1,4 +1,13 @@
-// src/plugins/vuetify.js
+/**
+ * @name vuetify.js
+ *
+ * @fileoverview Handles the setup of Vuetify.
+ *
+ * @author Sean Harding
+ * @version 1.0.0.0
+ * @copyright (c) 2024 Sean Harding
+ *
+ */
 
 import '@mdi/font/css/materialdesignicons.css'
 

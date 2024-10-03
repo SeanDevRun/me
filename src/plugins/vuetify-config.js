@@ -1,4 +1,13 @@
-// src/plugins/vuetify-theme.js
+/**
+ * @name vuetify-config.js
+ *
+ * @fileoverview Handles the definition of alias and defaults for componentns in Vuetify.
+ *
+ * @author Sean Harding
+ * @version 1.0.0.0
+ * @copyright (c) 2024 Sean Harding
+ *
+ */
 
 import * as core from "vuetify/components"
 
