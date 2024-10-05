@@ -1,9 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
 
 import router from "./router";
 
-import vuetify from './plugins/vuetify'
+import vuetify from "./plugins/vuetify";
 
 /**
  * @fileoverview The main file, no pun intended, to initialise the VUE app
@@ -15,9 +15,9 @@ import vuetify from './plugins/vuetify'
  *
  **/
 
- const app = createApp(App);
+const app = createApp(App);
 
- app.use(vuetify);
- app.use(router);
- 
- app.mount("#app");
+app.use(vuetify);
+app.use(router);
+
+app.mount("#app");

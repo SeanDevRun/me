@@ -1,18 +1,18 @@
 <template>
   <v-app>
-    <splash-view v-if="loading" />    
+    <splash-view v-if="loading" />
     <router-view v-else />
-  </v-app>  
+  </v-app>
 </template>
 
 <script>
-import SplashView from '@views/SplashView.vue';
+import SplashView from "@views/SplashView.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    SplashView
-  }, 
+    SplashView,
+  },
   data() {
     return {
       loading: true,
@@ -29,7 +29,7 @@ export default {
       }, 1000); // Delay to simulate loading (you can adjust this)
     });
   },
-}
+};
 </script>
 
 <style>

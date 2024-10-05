@@ -96,33 +96,31 @@
   </section-pane>
 </template>
   
-<script> 
-  import SectionPane from '@common/SectionPane.vue'  
+<script>
+import SectionPane from "@common/SectionPane.vue";
 
-  import ProgrammingSkills from '@components/profile/components/ProgrammingSkills.vue'
-  import DevOpsSkills from '@components/profile/components/DevOpsSkills.vue'
-  import DesignSkills from '@components/profile/components/DesignSkills.vue'
+import ProgrammingSkills from "@components/profile/components/ProgrammingSkills.vue";
+import DevOpsSkills from "@components/profile/components/DevOpsSkills.vue";
+import DesignSkills from "@components/profile/components/DesignSkills.vue";
 
-
-  export default {
-    name: 'AboutPane',
-    components: {
-      SectionPane,
-      DevOpsSkills,
-      ProgrammingSkills,
-      DesignSkills
-    },
-    data: () => ({
-      hobbies : [
-        "Playing guitar",
-        "Running",
-        "Hiking",
-        "Raising money and awareness for Movember"
-      ]
-    }),
-    methods: {
-    }
-  }
+export default {
+  name: "AboutPane",
+  components: {
+    SectionPane,
+    DevOpsSkills,
+    ProgrammingSkills,
+    DesignSkills,
+  },
+  data: () => ({
+    hobbies: [
+      "Playing guitar",
+      "Running",
+      "Hiking",
+      "Raising money and awareness for Movember",
+    ],
+  }),
+  methods: {},
+};
 </script>
   
 <style>

@@ -1,40 +1,46 @@
 <template>
-  <section class="section-component">            
-
-    <SheetPanel class="pa-10 bg-background-lighten-1" min-height="80vh" :elevation="12">
-
+  <section class="section-component">
+    <SheetPanel
+      class="pa-10 bg-background-lighten-1"
+      min-height="80vh"
+      :elevation="12"
+    >
       <h2 class="text-accent text-h3">{{ title }}</h2>
-      
+
       <div class="content">
         <slot></slot>
       </div>
-    
-      <v-btn v-if="scrollButtonEnabled" color="accent" rounded @click="scrollToNext()">Scroll To Next</v-btn>
 
+      <v-btn
+        v-if="scrollButtonEnabled"
+        color="accent"
+        rounded
+        @click="scrollToNext()"
+        >Scroll To Next</v-btn
+      >
     </SheetPanel>
-    
   </section>
 </template>
 
 <script>
 export default {
-  name: 'SectionComponent',
+  name: "SectionComponent",
   props: {
     title: {
       type: String,
-      required: true
+      required: true,
     },
     scrollButtonEnabled: {
       type: Boolean,
-      default: false      
-    }
+      default: false,
+    },
   },
   methods: {
     scrollToNext() {
-      this.$emit('scroll-to-next');
-    }
+      this.$emit("scroll-to-next");
+    },
   },
-}
+};
 </script>
 
 <style scoped>
@@ -42,7 +48,7 @@ export default {
   min-height: 70vh;
   align-items: center;
   justify-content: center;
-  text-align: center;  
+  text-align: center;
   margin: 5vh 5vw;
 }
 </style>

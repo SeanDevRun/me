@@ -13,21 +13,20 @@
 </template>
   
 <script>
-  import SectionPane from '@common/SectionPane.vue'
-  import ImageGallery from '@common/ImageGallery.vue'
-  
-  export default {
-    name: 'ProjectsPane',
-    components: {
-      SectionPane,
-      ImageGallery
-    },
-    data: () => ({
-      gallery: false
-    }),
-    methods: {
-    }
-  }
+import SectionPane from "@common/SectionPane.vue";
+import ImageGallery from "@common/ImageGallery.vue";
+
+export default {
+  name: "ProjectsPane",
+  components: {
+    SectionPane,
+    ImageGallery,
+  },
+  data: () => ({
+    gallery: false,
+  }),
+  methods: {},
+};
 </script>
   
 <style>
